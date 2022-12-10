@@ -11,3 +11,15 @@ menu, nav, output, ruby, section, summary, time,
 mark, audio, video {
     font-family: "Yekan Bakh Regular";
 }
+
+.container-main {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.container-main-sm {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
