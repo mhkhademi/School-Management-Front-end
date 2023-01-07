@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>لیست دانش آموزان</title>
+	<title>ثبت نام دانش آموزان</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../style.css" />
 </head>
 <body dir="rtl" style="background: #edf2f7;">
-	<nav class="shadow-lg bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 right-0 border-b border-gray-200 dark:border-gray-600">
+	<nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 right-0 border-b border-gray-200 dark:border-gray-600">
 		<div class="container flex flex-wrap items-center justify-between mx-auto">
 		<a href="https://flowbite.com/" class="flex items-center">
 			<img src="https://flowbite.com/docs/images/logo.svg" class="h-6 ml-3 sm:h-9" alt="Flowbite Logo">
@@ -42,7 +42,7 @@
 	</nav>
 	<div id="drawer-right-menu" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
 		<h5 id="drawer-right-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-5 h-5 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>منو</h5>
-		<button id="closeRightMenu" type="button" data-drawer-dismiss="drawer-right-menu" aria-controls="drawer-right-menu" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 left-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+		<button type="button" data-drawer-dismiss="drawer-right-menu" aria-controls="drawer-right-menu" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 left-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
 			<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 			<span class="sr-only">بستن منو</span>
 		</button>
@@ -216,103 +216,13 @@
 		</div>
 	</div>
 
-
-	<div class="m-10 bg-blue-200 block sm:hidden rounded-lg shadow-xl p-3 text-center">برای استفاده از امکانات این بخش لطفا با صفحه نمایش بزرگتری وارد سایت شوید :)</div>
-
-	<div class="sm:container-main container-main-sm hidden sm:block">
-		<div class="overflow-x-auto relative shadow-lg rounded-lg">
-			<div class="flex justify-between items-center py-4 bg-white dark:bg-gray-800">
-				<div class="hidden sm:block">
-					<a href="#" id="createUserButton" class="sm:inline-flex items-center mr-5 text-white font-bold bg-blue-300 shadow-lg focus:outline-none hover:bg-blue-400 focus:ring-4 focus:ring-gray-200 rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
-						<span class="sr-only">ثبت نام دانش آموز</span>
-						ثبت نام دانش آموز
-					</a>
-					<a onclick="deleteAll()" id="deleteAllUsersButton" class="sm:inline-flex items-center mr-5 text-white font-bold bg-red-300 shadow-lg focus:outline-none hover:bg-red-400 focus:ring-4 focus:ring-gray-200 rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
-						<span class="sr-only">حذف همه</span>
-						حذف همه
-					</a>
-				</div>
-				<label for="table-search" class="sr-only">جستجو</label>
-				<div class="relative ml-5">
-					<form action="#" method="post">
-						<input type="text" id="table-search-users" name="s" class="block p-2 pl-10 w-80 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="جستجو در دانش آموزان">
-						<div class="flex absolute inset-y-0 left-0 items-center pl-3">
-							<button type="submit"><svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></a>
-						</div>
-					</form>
-				</div>
-			</div>
-			<table class="w-full text-sm text-right text-gray-500 dark:text-gray-400">
-				<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-					<tr>
-						<th scope="col" class="py-3 px-6">
-							نام
-						</th>
-						<th scope="col" class="py-3 px-6">
-							شماره موبایل والدین
-						</th>
-						<th scope="col" class="py-3 px-6">
-							رشته تحصیلی
-						</th>
-						<th scope="col" class="py-3 px-6">
-							پایه
-						</th>
-						<th scope="col" class="py-3 px-6">
-							کلاس
-						</th>
-						<th scope="col" class="py-3 px-6">
-							آخرین نمره میانگین
-						</th>
-						<th scope="col" class="py-3 px-6">
-							ابزار ها
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-						<th scope="row" class="flex items-center py-4 px-6 text-gray-900 whitespace-nowrap dark:text-white">
-							<div>
-								<div class="text-base font-semibold">محمد حسین خادمی</div>
-							</div>  
-						</th>
-						<td class="py-4 px-6">
-							۰۹۱۲۳۴۵۶۷۸۹
-						</td>
-						<td class="py-4 px-6">
-							ریاضی و فیزیک
-						</td>
-						<td class="py-4 px-6">
-							دهم
-						</td>
-						<td class="py-4 px-6">
-							۱۰۱
-						</td>
-						<td class="py-4 px-6">
-							۱۹.۵
-						</td>
-						<td class="py-4 px-6">
-							<form method="post" action="#" class="inline">
-								<input type="hidden" name="id" value="">
-								<button type="submit">
-									<i class="text-blue-500 fa-solid fa-circle-info fa-xl"></i>
-								</button>
-							</form>
-							<form method="post" action="" class="inline mr-2">
-								<input type="hidden" name="id" value="">
-								<button type="submit">
-									<i class="text-red-500 fa-solid fa-trash fa-xl"></i>
-								</button>
-							</form>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+	<div class="sm:container-main container-main-sm">
+		
 	</div>
 	<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
