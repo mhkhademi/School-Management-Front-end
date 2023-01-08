@@ -82,15 +82,34 @@ function showToast() {
 
 function pa(sn) {
     studentNumber = sn;
-    var pORa = document.getElementsByClassName(studentNumber)
-    pORa[0].parentElement.classList.add('text-black')
-    if (pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tنامعلوم\n\t\t\t\t\t\t\t\t\t' || pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tغایب\n\t\t\t\t\t\t\t\t\t') {
-        pORa[0].textContent = '\n\t\t\t\t\t\t\t\t\t\tحاضر\n\t\t\t\t\t\t\t\t\t';
-        pORa[0].parentElement.classList.remove('bg-red-300')
-        pORa[0].parentElement.classList.add('bg-green-300')
-    } else if (pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tحاضر\n\t\t\t\t\t\t\t\t\t') {
-        pORa[0].textContent = '\n\t\t\t\t\t\t\t\t\t\tغایب\n\t\t\t\t\t\t\t\t\t';
-        pORa[0].parentElement.classList.remove('bg-green-300')
-        pORa[0].parentElement.classList.add('bg-red-300')
+    var pORa = document.getElementsByClassName(studentNumber)[0]
+    pORa.parentElement.classList.add('text-black')
+    if (pORa.textContent == '\n\t\t\t\t\t\t\t\t\t\tنامعلوم\n\t\t\t\t\t\t\t\t\t' || pORa.textContent == 'غایب') {
+        pORa.textContent = 'حاضر';
+        pORa.parentElement.classList.remove('bg-red-300')
+        pORa.parentElement.classList.add('bg-green-300')
+    } else if (pORa.textContent == 'حاضر') {
+        pORa.textContent = 'غایب';
+        pORa.parentElement.classList.remove('bg-green-300')
+        pORa.parentElement.classList.add('bg-red-300')
+    }
+}
+
+function deletePN(sn) {
+    studentNumber = sn;
+    var positive = document.getElementsByClassName(studentNumber)[1]
+    var negative = document.getElementsByClassName(studentNumber)[2]
+    positive.textContent = "0";
+    negative.textContent = "0";
+}
+
+function pn(sn, type) {
+    studentNumber = sn;
+    if (type == 'p') {
+        var positive = document.getElementsByClassName(studentNumber)[1]
+        positive.textContent = parseInt(positive.textContent) + 1
+    } else if (type == 'n') {
+        var negative = document.getElementsByClassName(studentNumber)[2]
+        negative.textContent = parseInt(negative.textContent) + 1
     }
 }

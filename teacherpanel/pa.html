@@ -120,6 +120,9 @@
 								<th scope="col" class="px-6 py-3 border-l border-b">
 									وضعیت جلسه قبل
 								</th>
+								<th scope="col" class="px-6 py-3 border-l border-b">
+									ابزار
+								</th>
 							</tr>
 						</thead>
 						<tbody class="text-center">
@@ -135,18 +138,23 @@
 										نامعلوم
 									</p>
 								</td>
-								<td class="px-6 py-4 border-l">
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'p')">
 									<p class="1">
 										0
 									</p>
 								</td>
-								<td class="px-6 py-4 border-l">
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'n')">
 									<p class="1">
 										0
 									</p>
 								</td>
 								<td class="px-6 py-4 border-l">
 									حاضر
+								</td>
+								<td class="px-6 py-4 border-l">
+									<button onclick="deletePN(1)" class="text-red-500">
+										حذف منفی و مثبت
+									</button>
 								</td>
 							</tr>
 						</tbody>
@@ -163,18 +171,23 @@
 										نامعلوم
 									</p>
 								</td>
-								<td class="px-6 py-4 border-l">
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'p')">
 									<p class="2">
 										0
 									</p>
 								</td>
-								<td class="px-6 py-4 border-l">
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'n')">
 									<p class="2">
 										0
 									</p>
 								</td>
 								<td class="px-6 py-4 border-l">
 									حاضر
+								</td>
+								<td class="px-6 py-4 border-l">
+									<button onclick="deletePN(2)" class="text-red-500">
+										حذف منفی و مثبت
+									</button>
 								</td>
 							</tr>
 						</tbody>
@@ -191,270 +204,23 @@
 										نامعلوم
 									</p>
 								</td>
-								<td class="px-6 py-4 border-l">
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'p')">
+									<p class="3">
+										0
+									</p>
+								</td>
+								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'n')">
 									<p class="3">
 										0
 									</p>
 								</td>
 								<td class="px-6 py-4 border-l">
-									<p class="3">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
 									حاضر
 								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									4
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(4)">
-									<p class="4">
-										نامعلوم
-									</p>
-								</td>
 								<td class="px-6 py-4 border-l">
-									<p class="4">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="4">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									5
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(5)">
-									<p class="5">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="5">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="5">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									6
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(6)">
-									<p class="6">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="6">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="6">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									7
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(7)">
-									<p class="7">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="7">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="7">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									8
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(8)">
-									<p class="8">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="8">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="8">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									9
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(9)">
-									<p class="9">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="9">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="9">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									10
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(10)">
-									<p class="10">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="10">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="10">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									11
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(11)">
-									<p class="11">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="11">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="11">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									12
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(12)">
-									<p class="12">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="12">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									<p class="12">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
+									<button onclick="deletePN(3)" class="text-red-500">
+										حذف منفی و مثبت
+									</button>
 								</td>
 							</tr>
 						</tbody>
