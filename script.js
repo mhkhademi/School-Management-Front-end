@@ -79,3 +79,18 @@ function showToast() {
     targetUpdateErrorToast.classList.remove('hidden');
     const updateErrorToast = new Dismiss(targetUpdateErrorToast, updateErrorToastOptions);
 }
+
+function pa(sn) {
+    studentNumber = sn;
+    var pORa = document.getElementsByClassName(studentNumber)
+    pORa[0].parentElement.classList.add('text-black')
+    if (pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tنامعلوم\n\t\t\t\t\t\t\t\t\t' || pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tغایب\n\t\t\t\t\t\t\t\t\t') {
+        pORa[0].textContent = '\n\t\t\t\t\t\t\t\t\t\tحاضر\n\t\t\t\t\t\t\t\t\t';
+        pORa[0].parentElement.classList.remove('bg-red-300')
+        pORa[0].parentElement.classList.add('bg-green-300')
+    } else if (pORa[0].textContent == '\n\t\t\t\t\t\t\t\t\t\tحاضر\n\t\t\t\t\t\t\t\t\t') {
+        pORa[0].textContent = '\n\t\t\t\t\t\t\t\t\t\tغایب\n\t\t\t\t\t\t\t\t\t';
+        pORa[0].parentElement.classList.remove('bg-green-300')
+        pORa[0].parentElement.classList.add('bg-red-300')
+    }
+}
