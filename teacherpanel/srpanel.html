@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>کلاس 101</title>
+	<title>پنل ثبت نمره</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
@@ -96,141 +96,127 @@
 	</div>
 
 	<div class="sm:container-main container-main-sm">
-		<div class="rounded-2xl shadow-xl bg-white">
-			<div class="relative overflow-x-auto shadow-xl rounded-2xl">
-				<table class="w-full text-sm text-conter text-gray-500 dark:text-gray-400">
-					<thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
-						<tr>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								شماره
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								نام دانش آموز
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								وضعیت
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								+
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								-
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								وضعیت جلسه قبل
-							</th>
-							<th scope="col" class="px-6 py-3 border-l border-b">
-								ابزار
-							</th>
-						</tr>
-					</thead>
-					<tbody class="text-center">
-						<tr class="border-b border-gray-200 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-								1
-							</th>
-							<th class="px-6 py-4 border-l">
-								محمد حسین خادمی
-							</th>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(1)">
-								<p class="1">
-									نامعلوم
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'p')">
-								<p class="1">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'n')">
-								<p class="1">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l">
-								حاضر
-							</td>
-							<td class="px-6 py-4 border-l">
-								<button onclick="deletePN(1)" class="text-red-500">
-									حذف منفی و مثبت
-								</button>
-							</td>
-						</tr>
-					</tbody>
-					<tbody class="text-center">
-						<tr class="border-b border-gray-200 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-								2
-							</th>
-							<th class="px-6 py-4 border-l">
-								محمد حسین خادمی
-							</th>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(2)">
-								<p class="2">
-									نامعلوم
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'p')">
-								<p class="2">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'n')">
-								<p class="2">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l">
-								حاضر
-							</td>
-							<td class="px-6 py-4 border-l">
-								<button onclick="deletePN(2)" class="text-red-500">
-									حذف منفی و مثبت
-								</button>
-							</td>
-						</tr>
-					</tbody>
-					<tbody class="text-center">
-						<tr class="border-b border-gray-200 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-								3
-							</th>
-							<th class="px-6 py-4 border-l">
-								محمد حسین خادمی
-							</th>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(3)">
-								<p class="3">
-									نامعلوم
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'p')">
-								<p class="3">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'n')">
-								<p class="3">
-									0
-								</p>
-							</td>
-							<td class="px-6 py-4 border-l">
-								حاضر
-							</td>
-							<td class="px-6 py-4 border-l">
-								<button onclick="deletePN(3)" class="text-red-500">
-									حذف منفی و مثبت
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+		<div class="hidden sm:grid grid-cols-5 gap-4">
+			<a href="./sr.html" class="text-center">
+				<div class="bg-blue-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">نوبت اول</h2>
+					<p class="text-blue-400">نهایی</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-blue-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">نوبت دوم</h2>
+					<p class="text-blue-400">نهایی</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">مهر</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">آبان</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">آذر</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">بهمن</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">اسفند</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">فروردین</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">اردیبهشت</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+		</div>
+		<div class="grid sm:hidden grid-cols-1 gap-4">
+			<a href="./sr.html" class="text-center">
+				<div class="bg-blue-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">نوبت اول</h2>
+					<p class="text-blue-400">نهایی</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-blue-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">نوبت دوم</h2>
+					<p class="text-blue-400">نهایی</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">مهر</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">آبان</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">آذر</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">بهمن</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">اسفند</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">فروردین</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<a href="./sr.html" class="text-center">
+				<div class="bg-green-100 rounded-2xl shadow-xl py-5">
+					<h1 class="text-xl">اردیبهشت</h2>
+					<p class="text-green-400">ماهانه</p>
+				</div>
+			</a>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 	<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<script src="../script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
