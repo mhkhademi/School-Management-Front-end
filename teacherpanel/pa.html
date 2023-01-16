@@ -96,136 +96,134 @@
 	</div>
 
 	<div class="sm:container-main container-main-sm">
-		<div class="">
-			<div class="rounded-2xl shadow-xl bg-white">
-				<div class="relative overflow-x-auto shadow-xl rounded-2xl">
-					<table class="w-full text-sm text-conter text-gray-500 dark:text-gray-400">
-						<thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
-							<tr>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									شماره
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									نام دانش آموز
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									وضعیت
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									+
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									-
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									وضعیت جلسه قبل
-								</th>
-								<th scope="col" class="px-6 py-3 border-l border-b">
-									ابزار
-								</th>
-							</tr>
-						</thead>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									1
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(1)">
-									<p class="1">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'p')">
-									<p class="1">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'n')">
-									<p class="1">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-								<td class="px-6 py-4 border-l">
-									<button onclick="deletePN(1)" class="text-red-500">
-										حذف منفی و مثبت
-									</button>
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									2
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(2)">
-									<p class="2">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'p')">
-									<p class="2">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'n')">
-									<p class="2">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-								<td class="px-6 py-4 border-l">
-									<button onclick="deletePN(2)" class="text-red-500">
-										حذف منفی و مثبت
-									</button>
-								</td>
-							</tr>
-						</tbody>
-						<tbody class="text-center">
-							<tr class="border-b border-gray-200 dark:border-gray-700">
-								<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
-									3
-								</th>
-								<th class="px-6 py-4 border-l">
-									محمد حسین خادمی
-								</th>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(3)">
-									<p class="3">
-										نامعلوم
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'p')">
-									<p class="3">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'n')">
-									<p class="3">
-										0
-									</p>
-								</td>
-								<td class="px-6 py-4 border-l">
-									حاضر
-								</td>
-								<td class="px-6 py-4 border-l">
-									<button onclick="deletePN(3)" class="text-red-500">
-										حذف منفی و مثبت
-									</button>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+		<div class="rounded-2xl shadow-xl bg-white">
+			<div class="relative overflow-x-auto shadow-xl rounded-2xl">
+				<table class="w-full text-sm text-conter text-gray-500 dark:text-gray-400">
+					<thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+						<tr>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								شماره
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								نام دانش آموز
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								وضعیت
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								+
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								-
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								وضعیت جلسه قبل
+							</th>
+							<th scope="col" class="px-6 py-3 border-l border-b">
+								ابزار
+							</th>
+						</tr>
+					</thead>
+					<tbody class="text-center">
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
+								1
+							</th>
+							<th class="px-6 py-4 border-l">
+								محمد حسین خادمی
+							</th>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(1)">
+								<p class="1">
+									نامعلوم
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'p')">
+								<p class="1">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(1, 'n')">
+								<p class="1">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l">
+								حاضر
+							</td>
+							<td class="px-6 py-4 border-l">
+								<button onclick="deletePN(1)" class="text-red-500">
+									حذف منفی و مثبت
+								</button>
+							</td>
+						</tr>
+					</tbody>
+					<tbody class="text-center">
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
+								2
+							</th>
+							<th class="px-6 py-4 border-l">
+								محمد حسین خادمی
+							</th>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(2)">
+								<p class="2">
+									نامعلوم
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'p')">
+								<p class="2">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(2, 'n')">
+								<p class="2">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l">
+								حاضر
+							</td>
+							<td class="px-6 py-4 border-l">
+								<button onclick="deletePN(2)" class="text-red-500">
+									حذف منفی و مثبت
+								</button>
+							</td>
+						</tr>
+					</tbody>
+					<tbody class="text-center">
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium whitespace-nowrap border-l">
+								3
+							</th>
+							<th class="px-6 py-4 border-l">
+								محمد حسین خادمی
+							</th>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pa(3)">
+								<p class="3">
+									نامعلوم
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'p')">
+								<p class="3">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l cursor-pointer" onclick="pn(3, 'n')">
+								<p class="3">
+									0
+								</p>
+							</td>
+							<td class="px-6 py-4 border-l">
+								حاضر
+							</td>
+							<td class="px-6 py-4 border-l">
+								<button onclick="deletePN(3)" class="text-red-500">
+									حذف منفی و مثبت
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
