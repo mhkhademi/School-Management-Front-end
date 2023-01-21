@@ -84,7 +84,7 @@ function pa(sn) {
     studentNumber = sn;
     var pORa = document.getElementsByClassName(studentNumber)[0]
     pORa.parentElement.classList.add('text-black')
-    if (pORa.textContent == '\n\t\t\t\t\t\t\t\t\t\tنامعلوم\n\t\t\t\t\t\t\t\t\t' || pORa.textContent == 'غایب') {
+    if (pORa.textContent != 'حاضر') {
         pORa.textContent = 'حاضر';
         pORa.parentElement.classList.remove('bg-red-300')
         pORa.parentElement.classList.add('bg-green-300')
