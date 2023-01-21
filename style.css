@@ -1,3 +1,8 @@
+@font-face {
+    font-family: YekanBakh;
+    src: url(./fonts/YekanBakhRegular.woff);
+}
+
 html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -9,7 +14,7 @@ thead, tr, th, td, article, aside, canvas, details,
 embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary, time,
 mark, audio, video {
-    font-family: "Yekan Bakh Regular";
+    font-family: "YekanBakh";
 }
 
 .container-main {
